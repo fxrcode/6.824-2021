@@ -1,5 +1,5 @@
 # 6.824-2021
-* Can I finish it in 1 month like Cloud-Developer?
+* Can I finish it in 1 month as in Nanodegree Cloud-Developer?
 
 
 # 快速拉取最新代码
@@ -21,34 +21,42 @@ origin  git://g.csail.mit.edu/6.824-golabs-2021 (push)
 $ git remote add upstream git://g.csail.mit.edu/6.824-golabs-2021    
 ```
 
-3. 设置origin repo为我的repo
+3. pull upstream的最新代码
 ```
 # fxrc @ popos in ~/Projects/6.824-2021 on git:master x [0:08:24] C:1
-$ git pull upstream master 
+$ git pull upstream master
 From git://g.csail.mit.edu/6.824-golabs-2021
  * branch            master     -> FETCH_HEAD
  * [new branch]      master     -> upstream/master
 Already up to date.
-(base) 
-# fxrc @ popos in ~/Projects/6.824-2021 on git:master x [0:08:27] 
+```
+
+4. 设置origin repo为我的repo
+```
+# fxrc @ popos in ~/Projects/6.824-2021 on git:master x [0:08:27]
 $ git remote add origin git@github.com:fxrcode/6.824-2021.git
 fatal: remote origin already exists.
-(base) 
+(base)
 # fxrc @ popos in ~/Projects/6.824-2021 on git:master x [0:09:09] C:128
-$ git remote set-url origin git@github.com:fxrcode/6.824-2021.git                          
-(base) 
-# fxrc @ popos in ~/Projects/6.824-2021 on git:master x [0:09:28] 
-$ git remote -v                                                  
+$ git remote set-url origin git@github.com:fxrcode/6.824-2021.git
+(base)
+# fxrc @ popos in ~/Projects/6.824-2021 on git:master x [0:09:28]
+$ git remote -v
 origin  git@github.com:fxrcode/6.824-2021.git (fetch)
 origin  git@github.com:fxrcode/6.824-2021.git (push)
 upstream        git://g.csail.mit.edu/6.824-golabs-2021 (fetch)
 upstream        git://g.csail.mit.edu/6.824-golabs-2021 (push)
-(base) 
-# fxrc @ popos in ~/Projects/6.824-2021 on git:master x [0:09:32] 
+(base)
+```
+
+
+4. 将从源头仓库更新后的代码推送到你自己的github仓库
+```
+# fxrc @ popos in ~/Projects/6.824-2021 on git:master x [0:09:32]
 $ git branch -M main
-(base) 
-# fxrc @ popos in ~/Projects/6.824-2021 on git:main x [0:09:38] 
-$ git push -u origin main 
+(base)
+# fxrc @ popos in ~/Projects/6.824-2021 on git:main x [0:09:38]
+$ git push -u origin main
 Enumerating objects: 148, done.
 Counting objects: 100% (148/148), done.
 Delta compression using up to 4 threads
@@ -60,6 +68,3 @@ To github.com:fxrcode/6.824-2021.git
  * [new branch]      main -> main
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
-
-4. 将从源头仓库更新后的代码推送到你自己的github仓库
-`git push origin main`
